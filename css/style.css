@@ -507,6 +507,8 @@ section {
 .img-mimtok { background: linear-gradient(135deg, #fa709a, #fee140) !important; }
 .img-tourvis { background: linear-gradient(135deg, #a18cd1, #fbc2eb) !important; }
 .img-enterprise { background: linear-gradient(135deg, #667eea, #764ba2) !important; }
+.img-teuida { background: linear-gradient(135deg, #ffecd2, #fcb69f) !important; color: #333 !important; }
+.img-dietcamera { background: linear-gradient(135deg, #a1c4fd, #c2e9fb) !important; color: #333 !important; }
 .img-lg { background: linear-gradient(135deg, #a8edea, #fed6e3) !important; color: #333 !important; }
 
 /* ========== Projects Filter ========== */
@@ -683,6 +685,13 @@ section {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 8px;
+}
+
+.modal-sub-role {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 .modal-link {

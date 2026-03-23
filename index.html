@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,13 +11,12 @@
 <!-- Navigation -->
 <nav id="navbar">
     <div class="nav-container">
-        <a href="#about" class="nav-logo">Portfolio</a>
+        <a href="#about" class="nav-logo">Profile</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="nav-toggle" aria-label="메뉴 열기">
             <span></span>
@@ -31,7 +30,7 @@
 <section id="about" class="about-hero">
     <div class="container">
         <div class="about-header">
-            <h1 class="about-name">홍길동</h1>
+            <h1 class="about-name">오주봉</h1>
             <p class="about-title">Mobile Developer &middot; 22년차</p>
         </div>
 
@@ -53,22 +52,17 @@
                 <div class="stat-desc">2004 ~ 현재</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">COMPANIES</div>
-                <div class="stat-value">7+</div>
-                <div class="stat-desc">게임사 ~ SDK 전문기업</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">CLIENTS</div>
-                <div class="stat-value">금융 / 대기업</div>
-                <div class="stat-desc">농협, 삼성생명, 아모레퍼시픽, LG전자 등</div>
-            </div>
+                <div class="stat-label">EXPERTISE</div>
+                <div class="stat-value">Android SDK / App / Web / Game</div>
+                <div class="stat-desc">금융권, 대기업 납품 다수</div>
+            </div>            
         </div>
 
         <ul class="about-info">
-            <li><strong>이름</strong><span>홍길동</span></li>
+            <li><strong>이름</strong><span>오주봉</span></li>
             <li><strong>경력</strong><span>22년 (2004 ~)</span></li>
             <li><strong>현직</strong><span>어니컴(주) TaaS플랫폼 사업부 수석연구원</span></li>
-            <li><strong>이메일</strong><span>email@example.com</span></li>
+            <li><strong>이메일</strong><span>blackzombie@naver.com</span></li>
         </ul>
     </div>
 </section>
@@ -87,6 +81,7 @@
                 <span class="tag">JavaScript</span>
                 <span class="tag">jQuery</span>
                 <span class="tag">JSP / Spring</span>
+                <span class="tag">Dart</span>
                 <span class="tag">Node.js</span>
                 <span class="tag">C / C++</span>
             </div>
@@ -97,6 +92,7 @@
             <div class="skill-tags">
                 <span class="tag primary">Flutter / Dart</span>
                 <span class="tag">Pigeon (Native Bridge)</span>
+                <span class="tag">Cordova</span>
             </div>
         </div>
 
@@ -131,6 +127,7 @@
                 <span class="tag">Firebase (Auth, FCM, Analytics)</span>
                 <span class="tag">OpenTelemetry</span>
                 <span class="tag">ExoPlayer</span>
+                <span class="tag">Admob</span>
             </div>
         </div>
 
@@ -144,6 +141,8 @@
                 <span class="tag">ProGuard / R8</span>
                 <span class="tag">Shadow JAR</span>
                 <span class="tag">Maven Central</span>
+                <span class="tag">XCode</span>
+                <span class="tag">Unity</span>
                 <span class="tag">Google Play Console</span>
                 <span class="tag">MongoDB</span>
             </div>
@@ -165,10 +164,10 @@
                     <h3>어니컴(주)</h3>
                     <p class="timeline-role">TaaS플랫폼 사업부 &middot; 수석연구원</p>
                     <ul>
-                        <li>IMQA Android SDK 아키텍처 재설계 및 리뉴얼 (OpenTelemetry 기반)</li>
-                        <li>삼성생명 전자서명 레거시 환경 대응 — 순수 Java OTLP 직접 구현</li>
+                        <li>IMQA Android SDK 개발 및 운영 (OpenTelemetry 기반)</li>
+                        <li>삼성생명 전자서명 레거시 환경 대응 개발 — 순수 Java OTLP 직접 구현</li>
                         <li>Flutter SDK 개발 (Pigeon 네이티브 연동)</li>
-                        <li class="timeline-clients">농협, 금융결제원, 삼성생명, 서민금융진흥원, 강원랜드</li>
+                        <li class="timeline-clients">농협, 금융결제원, 삼성생명, 서민금융진흥원, 강원랜드, OK데이터</li>
                     </ul>
                 </div>
             </div>
@@ -180,9 +179,11 @@
                     <h3>두잉랩</h3>
                     <p class="timeline-role">모바일팀 &middot; 팀장</p>
                     <ul>
-                        <li>FoodLens SDK V3 리뉴얼 — 카메라, AI 음식 인식, 멀티 모듈 설계</li>
+                        <li>FoodLens SDK V3 리뉴얼 — 카메라, AI 음식 인식, 멀티 모듈 설계, Maven 배포</li>
                         <li>상식플러스 앱 전체 개발 (Compose, CGM 연동)</li>
                         <li>다이어트카메라AI 앱 유지보수 및 CES 데모 버전 개발</li>
+                        <li>FoodLens SDK 유지보수 — 카메라, AI 음식 인식, 멀티 모듈 설계, Maven 배포</li>
+                        <li class="timeline-clients">삼성생명, 녹십자, 서울특별시, 쥬비스, 메트라이프, 필리코치</li>
                     </ul>
                 </div>
             </div>
@@ -218,7 +219,7 @@
                     <h3>폴라리움</h3>
                     <p class="timeline-role">항공플랫폼사업본부 &middot; 차장</p>
                     <ul>
-                        <li>TOURVIS 항공권 예매 — 모바일 웹 프론트 개발 및 제휴사 연동 (스카이스캐너, 카약, G9)</li>
+                        <li>TOURVIS 항공권 예매 — 웹 프론트 개발 및 제휴사 연동 (스카이스캐너, 카약, G9)</li>
                         <li>TripView 출장관리 — Android 앱 개발 및 Node.js/MongoDB 서버 운영</li>
                     </ul>
                 </div>
@@ -232,7 +233,7 @@
                     <p class="timeline-role">융합기술팀</p>
                     <ul>
                         <li>아모레퍼시픽, 포스코, 연합뉴스 등 대기업 사내 메신저/그룹웨어 Android 개발</li>
-                        <li>오프라인 모드, 메일/결재 암호화, 국내/해외/중국 다국가 대응</li>
+                        <li>오프라인 모드, 메일/결제/주소록 로컬 DB 저장</li>
                     </ul>
                 </div>
             </div>
@@ -295,7 +296,7 @@
             </div>
 
             <div class="project-card" data-category="sdk" onclick="openModal('modal-vanilla')">
-                <div class="project-image img-vanilla">Vanilla SDK</div>
+                <div class="project-image img-vanilla">IMQA Vanilla SDK</div>
                 <div class="project-info">
                     <h3>IMQA Vanilla SDK</h3>
                     <p>레거시 환경 대응 순수 Java SDK</p>
@@ -315,7 +316,7 @@
                     <div class="project-tags">
                         <span class="tag-sm">Flutter</span>
                         <span class="tag-sm">Dart</span>
-                        <span class="tag-sm">Pigeon</span>
+                        <span class="tag-sm">Pigeon</span>                        
                     </div>
                 </div>
             </div>
@@ -323,8 +324,8 @@
             <div class="project-card" data-category="sdk" onclick="openModal('modal-foodlens')">
                 <div class="project-image img-foodlens">FoodLens</div>
                 <div class="project-info">
-                    <h3>FoodLens SDK V3</h3>
-                    <p>AI 음식 인식 카메라 SDK</p>
+                    <h3>FoodLens SDK</h3>
+                    <p>AI 음식 인식 카메라 SDK (V1~V3)</p>
                     <div class="project-tags">
                         <span class="tag-sm">Kotlin</span>
                         <span class="tag-sm">Camera</span>
@@ -372,11 +373,36 @@
                 </div>
             </div>
 
-            <div class="project-card" data-category="app" onclick="openModal('modal-enterprise')">
-                <div class="project-image img-enterprise">Enterprise</div>
+            <div class="project-card" data-category="app" onclick="openModal('modal-teuida')">
+                <div class="project-image img-teuida">TEUIDA</div>
                 <div class="project-info">
-                    <h3>엔터프라이즈 솔루션</h3>
-                    <p>대기업 메신저/그룹웨어</p>
+                    <h3>TEUIDA</h3>
+                    <p>외국인 한국어 교육 앱</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Kotlin</span>
+                        <span class="tag-sm">Android</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" onclick="openModal('modal-dietcamera')">
+                <div class="project-image img-dietcamera">Diet Camera</div>
+                <div class="project-info">
+                    <h3>다이어트카메라AI</h3>
+                    <p>사진으로 칼로리 계산 다이어트 앱</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Kotlin</span>
+                        <span class="tag-sm">Compose</span>
+                        <span class="tag-sm">FoodLens</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" onclick="openModal('modal-enterprise')">
+                <div class="project-image img-enterprise">B2E 메신져/그룹웨어</div>
+                <div class="project-info">
+                    <h3>대기업 메신저 및 그룹웨어 개발</h3>
+                    <p>아모레퍼시픽, 포스코, 연합뉴스 등</p>
                     <div class="project-tags">
                         <span class="tag-sm">Android</span>
                         <span class="tag-sm">보안</span>
@@ -402,6 +428,52 @@
 </section>
 
 <!-- ========== Project Modals ========== -->
+
+<div id="modal-teuida" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-teuida')">&times;</button>
+        <h2>TEUIDA</h2>
+        <p class="modal-period">2019.11 - 2020.09 &middot; (주)트이다</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>외국인을 대상으로 한국어를 교육하는 모바일 앱</p>
+            <h4>담당 역할</h4>
+            <p>Android 네이티브 앱 전체 개발 및 유지보수</p>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Android</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="https://play.google.com/store/apps/details?id=net.teuida.teuida" target="_blank" rel="noopener" class="modal-link">Google Play</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-dietcamera" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-dietcamera')">&times;</button>
+        <h2>다이어트카메라AI</h2>
+        <p class="modal-period">2022.08 - 2025.02 &middot; 두잉랩</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>FoodLens SDK를 활용하여 사진 촬영으로 칼로리를 계산하고 다이어트에 도움을 주는 앱</p>
+            <h4>담당 역할</h4>
+            <p>유지보수, CES 데모 버전 개발, Phase2 신규 버전 개발</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>CES 전시용 데모 버전 개발</li>
+                <li>Jetpack Compose 기반 Phase2 신규 버전 개발</li>
+                <li>FoodLens SDK 연동 및 식단 관리 기능 구현</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">FoodLens SDK</span><span class="tag">Android</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="https://play.google.com/store/apps/details?id=com.doinglab.dietdiaryai" target="_blank" rel="noopener" class="modal-link">Google Play</a></p>
+        </div>
+    </div>
+</div>
 
 <div id="modal-imqa" class="modal">
     <div class="modal-content">
@@ -492,14 +564,14 @@
 <div id="modal-foodlens" class="modal">
     <div class="modal-content">
         <button class="modal-close" onclick="closeModal('modal-foodlens')">&times;</button>
-        <h2>FoodLens SDK V3</h2>
+        <h2>FoodLens SDK</h2>
         <p class="modal-period">2022.08 - 2025.02 &middot; 두잉랩</p>
         <div class="modal-body">
             <h4>프로젝트 개요</h4>
-            <p>사진 촬영만으로 음식을 자동 인식하고 영양 분석까지 수행하는 AI 기반 카메라 SDK. V2(CaloAI) &rarr; V3 리뉴얼 및 기존 V1 유지보수 담당.</p>
-            <h4>담당 역할</h4>
-            <p>SDK 리뉴얼 V3 개발(core, ui), Maven 배포, 샘플 개발, 유지보수, VOC 대응</p>
-            <h4>주요 성과</h4>
+            <p>사진 촬영만으로 음식을 자동 인식하고 영양 분석까지 수행하는 AI 기반 카메라 SDK. V1 유지보수, V2(CaloAI) 개발, V3 리뉴얼까지 전 버전을 담당.</p>
+
+            <h4>FoodLens SDK V3 (리뉴얼)</h4>
+            <p class="modal-sub-role">SDK 리뉴얼 V3 개발(core, ui), Maven 배포, 샘플 개발, 유지보수, VOC 대응</p>
             <ul>
                 <li>CameraView(Camera2) 기반 카메라 촬영/플래시/방향 감지 구현</li>
                 <li>EXIF 회전 보정, Bitmap 리사이즈/압축 이미지 처리 파이프라인</li>
@@ -507,12 +579,24 @@
                 <li>멀티 모듈 SDK 구조 설계 (core, ui)</li>
                 <li>Android 버전별 권한 분기 처리 (API 19~34)</li>
             </ul>
+
+            <h4>FoodLens SDK V1 (유지보수)</h4>
+            <p class="modal-sub-role">SDK 유지보수, Maven 배포, VOC 대응</p>
+            <ul>
+                <li>기존 고객사 대상 안정적 운영 및 이슈 대응</li>
+                <li>Maven 배포 및 버전 관리</li>
+            </ul>
+
             <h4>기술 스택</h4>
             <div class="modal-tags">
-                <span class="tag">Kotlin</span><span class="tag">CameraView</span><span class="tag">MVVM</span><span class="tag">Room</span><span class="tag">Glide</span><span class="tag">Retrofit</span><span class="tag">Data Binding</span><span class="tag">Coroutines</span><span class="tag">Maven</span>
+                <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">CameraView</span><span class="tag">MVVM</span><span class="tag">Room</span><span class="tag">Glide</span><span class="tag">Retrofit</span><span class="tag">Data Binding</span><span class="tag">Coroutines</span><span class="tag">Maven</span>
             </div>
             <h4>관련 링크</h4>
-            <p><a href="https://github.com/doinglab/FoodLensSDK-V3" target="_blank" rel="noopener" class="modal-link">GitHub (SDK V3)</a></p>
+            <p>
+                <a href="https://github.com/doinglab/FoodLensSDK-V3" target="_blank" rel="noopener" class="modal-link">GitHub (SDK V3)</a>
+                &nbsp;&middot;&nbsp;
+                <a href="https://github.com/doinglab/FoodLensSDK" target="_blank" rel="noopener" class="modal-link">GitHub (SDK V1)</a>
+            </p>
         </div>
     </div>
 </div>
@@ -635,26 +719,9 @@
     </div>
 </div>
 
-<!-- Contact -->
-<section id="contact">
-    <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-content">
-            <div class="contact-item">
-                <h3>Email</h3>
-                <a href="mailto:email@example.com">email@example.com</a>
-            </div>
-            <div class="contact-item">
-                <h3>GitHub</h3>
-                <a href="https://github.com/username" target="_blank" rel="noopener">github.com/username</a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Footer -->
 <footer>
-    <p>&copy; 2026 홍길동. All rights reserved.</p>
+    <p>&copy; 2026 오주봉. All rights reserved.</p>
 </footer>
 
 <script src="js/main.js"></script>
