@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-container">
+        <a href="#about" class="nav-logo">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- About (최상단) -->
+<section id="about" class="about-hero">
+    <div class="container">
+        <div class="about-header">
+            <h1 class="about-name">홍길동</h1>
+            <p class="about-title">Mobile Developer &middot; 22년차</p>
+        </div>
+
+        <div class="about-summary">
+            <div class="summary-grid">
+                <div class="summary-item">피처폰 개발부터 Android 네이티브, SDK 설계, 크로스플랫폼(Flutter)까지 모바일 전 세대를 경험한 개발자</div>
+                <div class="summary-item">OpenTelemetry 기반 APM(성능 모니터링) SDK 설계 및 다수 금융권 고객사 적용 경험</div>
+                <div class="summary-item">AI 음식 인식 카메라 SDK, 건강관리 앱 등 SDK와 앱 양쪽의 설계/개발/배포 경험 보유</div>
+                <div class="summary-item">항공권 예매 사이트 웹 프론트 개발, 제휴사 API 연동, Node.js 서버 운영 등 웹 풀스택 경험 보유</div>
+                <div class="summary-item">대기업 엔터프라이즈 솔루션 (메신저, 그룹웨어) 다수 개발 및 다국가 대응</div>
+                <div class="summary-item">LG전자 Android 디바이스 프레임워크(OS 레벨) 개발 경험</div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-card">
+                <div class="stat-label">CAREER</div>
+                <div class="stat-value">22 Years</div>
+                <div class="stat-desc">2004 ~ 현재</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">COMPANIES</div>
+                <div class="stat-value">7+</div>
+                <div class="stat-desc">게임사 ~ SDK 전문기업</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">CLIENTS</div>
+                <div class="stat-value">금융 / 대기업</div>
+                <div class="stat-desc">농협, 삼성생명, 아모레퍼시픽, LG전자 등</div>
+            </div>
+        </div>
+
+        <ul class="about-info">
+            <li><strong>이름</strong><span>홍길동</span></li>
+            <li><strong>경력</strong><span>22년 (2004 ~)</span></li>
+            <li><strong>현직</strong><span>어니컴(주) TaaS플랫폼 사업부 수석연구원</span></li>
+            <li><strong>이메일</strong><span>email@example.com</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skill-category">
+            <h3 class="skill-category-title">Languages & Frameworks</h3>
+            <div class="skill-tags">
+                <span class="tag primary">Kotlin</span>
+                <span class="tag primary">Java</span>
+                <span class="tag primary">Jetpack Compose</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">jQuery</span>
+                <span class="tag">JSP / Spring</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">C / C++</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="skill-category-title">Cross-Platform</h3>
+            <div class="skill-tags">
+                <span class="tag primary">Flutter / Dart</span>
+                <span class="tag">Pigeon (Native Bridge)</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="skill-category-title">Architecture</h3>
+            <div class="skill-tags">
+                <span class="tag primary">MVVM</span>
+                <span class="tag primary">Clean Architecture</span>
+                <span class="tag primary">Multi-Module</span>
+                <span class="tag">SDK Design</span>
+                <span class="tag">Repository Pattern</span>
+                <span class="tag">Dependency Injection</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="skill-category-title">Libraries & SDKs</h3>
+            <div class="skill-tags">
+                <span class="tag">Retrofit</span>
+                <span class="tag">OkHttp</span>
+                <span class="tag">Ktor</span>
+                <span class="tag">Gson</span>
+                <span class="tag">Hilt</span>
+                <span class="tag">Coroutines / Flow</span>
+                <span class="tag">LiveData</span>
+                <span class="tag">ViewModel</span>
+                <span class="tag">Room</span>
+                <span class="tag">Data Binding</span>
+                <span class="tag">Navigation</span>
+                <span class="tag">Glide</span>
+                <span class="tag">CameraView</span>
+                <span class="tag">Firebase (Auth, FCM, Analytics)</span>
+                <span class="tag">OpenTelemetry</span>
+                <span class="tag">ExoPlayer</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3 class="skill-category-title">Tools & DevOps</h3>
+            <div class="skill-tags">
+                <span class="tag">Android Studio</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">Git / GitHub</span>
+                <span class="tag">Gradle</span>
+                <span class="tag">ProGuard / R8</span>
+                <span class="tag">Shadow JAR</span>
+                <span class="tag">Maven Central</span>
+                <span class="tag">Google Play Console</span>
+                <span class="tag">MongoDB</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2025.04 - 현재</span>
+                    <h3>어니컴(주)</h3>
+                    <p class="timeline-role">TaaS플랫폼 사업부 &middot; 수석연구원</p>
+                    <ul>
+                        <li>IMQA Android SDK 아키텍처 재설계 및 리뉴얼 (OpenTelemetry 기반)</li>
+                        <li>삼성생명 전자서명 레거시 환경 대응 — 순수 Java OTLP 직접 구현</li>
+                        <li>Flutter SDK 개발 (Pigeon 네이티브 연동)</li>
+                        <li class="timeline-clients">농협, 금융결제원, 삼성생명, 서민금융진흥원, 강원랜드</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2022.08 - 2025.03</span>
+                    <h3>두잉랩</h3>
+                    <p class="timeline-role">모바일팀 &middot; 팀장</p>
+                    <ul>
+                        <li>FoodLens SDK V3 리뉴얼 — 카메라, AI 음식 인식, 멀티 모듈 설계</li>
+                        <li>상식플러스 앱 전체 개발 (Compose, CGM 연동)</li>
+                        <li>다이어트카메라AI 앱 유지보수 및 CES 데모 버전 개발</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2020.12 - 2022.08</span>
+                    <h3>토이푸딩</h3>
+                    <p class="timeline-role">개발팀 &middot; 팀장</p>
+                    <ul>
+                        <li>MIMTOK — 숏클립 세로영상 SNS 플랫폼 전체 Android 개발</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2019.11 - 2020.09</span>
+                    <h3>(주)트이다</h3>
+                    <p class="timeline-role">개발팀 &middot; 차장</p>
+                    <ul>
+                        <li>TEUIDA — 외국인 한국어 교육 앱 전체 Android 개발</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2017.09 - 2019.11</span>
+                    <h3>폴라리움</h3>
+                    <p class="timeline-role">항공플랫폼사업본부 &middot; 차장</p>
+                    <ul>
+                        <li>TOURVIS 항공권 예매 — 모바일 웹 프론트 개발 및 제휴사 연동 (스카이스캐너, 카약, G9)</li>
+                        <li>TripView 출장관리 — Android 앱 개발 및 Node.js/MongoDB 서버 운영</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2014.08 - 2017.09</span>
+                    <h3>케이엠에스랩</h3>
+                    <p class="timeline-role">융합기술팀</p>
+                    <ul>
+                        <li>아모레퍼시픽, 포스코, 연합뉴스 등 대기업 사내 메신저/그룹웨어 Android 개발</li>
+                        <li>오프라인 모드, 메일/결재 암호화, 국내/해외/중국 다국가 대응</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2009.08 - 2014.08</span>
+                    <h3>xprime</h3>
+                    <p class="timeline-role">개발팀</p>
+                    <ul>
+                        <li>LG전자 Android 디바이스 프레임워크 개발 (Setting, Launcher, Call)</li>
+                        <li>삼성생명, 삼성건설, LG전자, 농협, SK 등 대기업 Android 앱 개발</li>
+                        <li>TouchTak 스마트 테이블 솔루션 — MDM, 런처, 브라우저 전체 개발</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2004.07 - 2009.07</span>
+                    <h3>스미스앤모바일 / 엔타즈 / 쏘뉴</h3>
+                    <p class="timeline-role">모바일 게임 개발</p>
+                    <ul>
+                        <li>SKT, KTF, LG 피처폰 게임 개발 (GVM, SKVM, WIPI, BREW)</li>
+                        <li>위대한 캣츠비 — PM 및 전체 개발 (SKT/KTF/LG/삼성 멀티 플랫폼)</li>
+                        <li>바질리스크, 뮤직맞고, 칵테일 등 다수 상용 게임 출시</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="sdk">SDK</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card" data-category="sdk" onclick="openModal('modal-imqa')">
+                <div class="project-image img-imqa">IMQA SDK</div>
+                <div class="project-info">
+                    <h3>IMQA Android SDK</h3>
+                    <p>OpenTelemetry 기반 성능 모니터링 SDK</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Kotlin</span>
+                        <span class="tag-sm">OpenTelemetry</span>
+                        <span class="tag-sm">Compose</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="sdk" onclick="openModal('modal-vanilla')">
+                <div class="project-image img-vanilla">Vanilla SDK</div>
+                <div class="project-info">
+                    <h3>IMQA Vanilla SDK</h3>
+                    <p>레거시 환경 대응 순수 Java SDK</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Java</span>
+                        <span class="tag-sm">OTLP</span>
+                        <span class="tag-sm">삼성생명</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="sdk" onclick="openModal('modal-flutter')">
+                <div class="project-image img-flutter">Flutter SDK</div>
+                <div class="project-info">
+                    <h3>IMQA Flutter SDK</h3>
+                    <p>Flutter 분석/모니터링 SDK</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Flutter</span>
+                        <span class="tag-sm">Dart</span>
+                        <span class="tag-sm">Pigeon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="sdk" onclick="openModal('modal-foodlens')">
+                <div class="project-image img-foodlens">FoodLens</div>
+                <div class="project-info">
+                    <h3>FoodLens SDK V3</h3>
+                    <p>AI 음식 인식 카메라 SDK</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Kotlin</span>
+                        <span class="tag-sm">Camera</span>
+                        <span class="tag-sm">MVVM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" onclick="openModal('modal-sangsik')">
+                <div class="project-image img-sangsik">SangSik+</div>
+                <div class="project-info">
+                    <h3>상식플러스</h3>
+                    <p>건강/영양 관리 앱</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Compose</span>
+                        <span class="tag-sm">Hilt</span>
+                        <span class="tag-sm">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" onclick="openModal('modal-mimtok')">
+                <div class="project-image img-mimtok">MIMTOK</div>
+                <div class="project-info">
+                    <h3>MIMTOK</h3>
+                    <p>숏클립 세로영상 SNS</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Kotlin</span>
+                        <span class="tag-sm">Video</span>
+                        <span class="tag-sm">SNS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web" onclick="openModal('modal-tourvis')">
+                <div class="project-image img-tourvis">TOURVIS</div>
+                <div class="project-info">
+                    <h3>TOURVIS</h3>
+                    <p>항공권 예매 웹/앱</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Java</span>
+                        <span class="tag-sm">JavaScript</span>
+                        <span class="tag-sm">jQuery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" onclick="openModal('modal-enterprise')">
+                <div class="project-image img-enterprise">Enterprise</div>
+                <div class="project-info">
+                    <h3>엔터프라이즈 솔루션</h3>
+                    <p>대기업 메신저/그룹웨어</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Android</span>
+                        <span class="tag-sm">보안</span>
+                        <span class="tag-sm">다국가</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="app" onclick="openModal('modal-lg')">
+                <div class="project-image img-lg">LG Device</div>
+                <div class="project-info">
+                    <h3>LG 디바이스 프레임워크</h3>
+                    <p>Android OS 레벨 앱 개발</p>
+                    <div class="project-tags">
+                        <span class="tag-sm">Android Framework</span>
+                        <span class="tag-sm">System App</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== Project Modals ========== -->
+
+<div id="modal-imqa" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-imqa')">&times;</button>
+        <h2>IMQA Android SDK</h2>
+        <p class="modal-period">2025.04 - 현재 &middot; 어니컴(주)</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>Android 앱의 성능 모니터링, 이벤트 추적, 크래시/ANR 감지를 위한 OpenTelemetry 기반 계측 SDK. 기존 아키텍처를 재설계하고 기능을 확장한 리뉴얼 버전.</p>
+            <h4>담당 역할</h4>
+            <p>Android SDK 개발, 샘플 앱 개발, 기술 지원, 현장 대응</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>Render 성능 추적 (화면 이동 성능 측정)</li>
+                <li>사용자 클릭 이벤트 및 화면 추적</li>
+                <li>네트워크 XHR 트레이싱 (OkHttp / Retrofit / HttpURLConnection / Ktor 지원)</li>
+                <li>WebView 이벤트 및 JS 브릿지 연동</li>
+                <li>Crash, ANR 수집 및 로그 전송</li>
+                <li>Jetpack Compose 환경 사용자 이벤트 지원 (확장 모듈)</li>
+                <li>CPU / Memory / Battery / Network 상태 모니터링</li>
+                <li>다양한 고객사 환경 호환성 확보 및 SDK 구조 개선</li>
+            </ul>
+            <h4>주요 고객사</h4>
+            <p>농협, 금융결제원, 서민금융진흥원 등</p>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Jetpack Compose</span><span class="tag">OpenTelemetry</span><span class="tag">OkHttp</span><span class="tag">Ktor</span><span class="tag">Maven Central</span><span class="tag">ProGuard</span><span class="tag">Shadow JAR</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="http://www.onycom.com/solution/imqa.do" target="_blank" rel="noopener" class="modal-link">IMQA 솔루션 소개</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-vanilla" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-vanilla')">&times;</button>
+        <h2>IMQA Vanilla SDK</h2>
+        <p class="modal-period">2025.05 - 현재 &middot; 어니컴(주)</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>삼성생명 전자서명 등 레거시 환경(Gradle 4.6, SDK 27, Support Library)에서 동작하는 성능 모니터링 SDK. OpenTelemetry 라이브러리를 사용하지 않고 OTLP 스펙 기반으로 순수 Java 직접 구현.</p>
+            <h4>담당 역할</h4>
+            <p>Android SDK 개발, SDK 배포, 샘플 개발, 유지보수, VOC 대응</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>OpenTelemetry SDK 없이 OTLP 데이터 포맷 직접 구현 (순수 Java)</li>
+                <li>디스크 기반 배치 프로세서 및 전송 로직 자체 구현</li>
+                <li>Apache HttpClient 4.2 인터셉터 개발 (레거시 전용)</li>
+                <li>Render 추적, 클릭 이벤트, XHR, WebView, Crash 수집</li>
+            </ul>
+            <h4>주요 고객사</h4>
+            <p>삼성생명 (전자서명), 강원랜드 (minSDK 21 미만 대응)</p>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Java</span><span class="tag">OTLP JSON</span><span class="tag">OkHttp</span><span class="tag">Apache HttpClient</span><span class="tag">Android Support Library</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-flutter" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-flutter')">&times;</button>
+        <h2>IMQA Flutter SDK</h2>
+        <p class="modal-period">2025.10 - 현재 &middot; 어니컴(주)</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>OpenTelemetry 기반 Flutter 분석/모니터링 SDK 개발 (내부 R&D)</p>
+            <h4>담당 역할</h4>
+            <p>Flutter SDK 개발, 플랫폼 플러그인 개발(Android), 샘플 개발, 유지보수</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>Pigeon 활용 네이티브 플랫폼(Android) 연동</li>
+                <li>Render 추적, 클릭 이벤트, XHR, WebView, Crash 수집 기능 구현</li>
+                <li>테스트 앱 Google Play 출시</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Pigeon</span><span class="tag">OpenTelemetry</span><span class="tag">Android Plugin</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="https://play.google.com/store/apps/details?id=bong.jbms.speakshorts" target="_blank" rel="noopener" class="modal-link">Google Play (테스트 앱)</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-foodlens" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-foodlens')">&times;</button>
+        <h2>FoodLens SDK V3</h2>
+        <p class="modal-period">2022.08 - 2025.02 &middot; 두잉랩</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>사진 촬영만으로 음식을 자동 인식하고 영양 분석까지 수행하는 AI 기반 카메라 SDK. V2(CaloAI) &rarr; V3 리뉴얼 및 기존 V1 유지보수 담당.</p>
+            <h4>담당 역할</h4>
+            <p>SDK 리뉴얼 V3 개발(core, ui), Maven 배포, 샘플 개발, 유지보수, VOC 대응</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>CameraView(Camera2) 기반 카메라 촬영/플래시/방향 감지 구현</li>
+                <li>EXIF 회전 보정, Bitmap 리사이즈/압축 이미지 처리 파이프라인</li>
+                <li>MediaStore API(Scoped Storage) 대응 갤러리 저장</li>
+                <li>멀티 모듈 SDK 구조 설계 (core, ui)</li>
+                <li>Android 버전별 권한 분기 처리 (API 19~34)</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Kotlin</span><span class="tag">CameraView</span><span class="tag">MVVM</span><span class="tag">Room</span><span class="tag">Glide</span><span class="tag">Retrofit</span><span class="tag">Data Binding</span><span class="tag">Coroutines</span><span class="tag">Maven</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="https://github.com/doinglab/FoodLensSDK-V3" target="_blank" rel="noopener" class="modal-link">GitHub (SDK V3)</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-sangsik" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-sangsik')">&times;</button>
+        <h2>상식플러스</h2>
+        <p class="modal-period">2024.06 - 2025.02 &middot; 두잉랩</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>FoodLens SDK V3를 활용한 식단/혈당/체중 관리 앱. 리뉴얼 버전 전체 개발.</p>
+            <h4>담당 역할</h4>
+            <p>리뉴얼 버전 전체 개발, 케어센스 CGM 연동, 유지보수</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>Jetpack Compose + XML 하이브리드 UI 구현</li>
+                <li>Hilt 기반 Clean Architecture 설계</li>
+                <li>Firebase Auth + Google/Naver/Kakao 소셜 로그인 통합</li>
+                <li>FCM 푸시 알림 시스템 구축</li>
+                <li>케어센스 CGM(연속혈당측정) 연동</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Hilt</span><span class="tag">Retrofit</span><span class="tag">Firebase</span><span class="tag">Glide</span><span class="tag">Clean Architecture</span><span class="tag">MVVM</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="https://play.google.com/store/apps/details?id=com.doinglab.sangsik" target="_blank" rel="noopener" class="modal-link">Google Play</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-mimtok" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-mimtok')">&times;</button>
+        <h2>MIMTOK</h2>
+        <p class="modal-period">2020.12 - 2022.08 &middot; 토이푸딩</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>숏클립 세로영상 SNS 플랫폼</p>
+            <h4>담당 역할</h4>
+            <p>Android 네이티브 앱 전체 개발 및 유지보수</p>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">ExoPlayer</span><span class="tag">Android</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-tourvis" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-tourvis')">&times;</button>
+        <h2>TOURVIS</h2>
+        <p class="modal-period">2017.09 - 2019.11 &middot; 폴라리움</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>항공권 예매 사이트 및 하이브리드 앱. 웹 프론트 개발부터 제휴사 연동, 서버 운영까지 풀스택 경험.</p>
+            <h4>담당 역할</h4>
+            <ul>
+                <li>모바일 웹 프론트 개발 및 유지보수</li>
+                <li>스카이스캐너, 카약, G9 제휴사 연동 개발</li>
+                <li>TOURVIS 하이브리드 Android 앱 개발</li>
+                <li>TripView 출장관리 서비스 — Android 앱 + Node.js/MongoDB 서버 운영</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Android</span>
+            </div>
+            <h4>관련 링크</h4>
+            <p><a href="https://air.tourvis.com/" target="_blank" rel="noopener" class="modal-link">TOURVIS 사이트</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="modal-enterprise" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-enterprise')">&times;</button>
+        <h2>엔터프라이즈 솔루션</h2>
+        <p class="modal-period">2014.08 - 2017.09 &middot; 케이엠에스랩</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>대기업 사내 메신저, 그룹웨어, 보안 솔루션 Android 앱 개발. 국내/해외/중국 다국가 대응.</p>
+            <h4>주요 프로젝트</h4>
+            <ul>
+                <li><strong>아모레퍼시픽</strong> — 사내 메신저(ABC2) 고도화, 그룹웨어(mAP-ON) 오프라인 모드, 메일/결재 암호화</li>
+                <li><strong>포스코</strong> — 그룹웨어 (국내/해외/중국용)</li>
+                <li><strong>연합뉴스</strong> — 메신저 + 그룹웨어</li>
+                <li><strong>분당재생병원</strong> — 직원 메신저</li>
+                <li><strong>K-Portal Ring</strong> — 발신자 정보 표시 사내 서비스</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Android (Java)</span><span class="tag">SQLite</span><span class="tag">암호화</span><span class="tag">오프라인 동기화</span><span class="tag">Push</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-lg" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-lg')">&times;</button>
+        <h2>LG 디바이스 프레임워크</h2>
+        <p class="modal-period">2010.06 - 2011.03 &middot; xprime</p>
+        <div class="modal-body">
+            <h4>프로젝트 개요</h4>
+            <p>LG전자 유럽향 Android 스마트폰 모델(Pecan, Hizen)의 OS 레벨 시스템 앱 개발.</p>
+            <h4>주요 성과</h4>
+            <ul>
+                <li>Setting (시스템 설정) 앱 개발</li>
+                <li>Launcher (홈 런처) 개발</li>
+                <li>Call (전화) 앱 개발</li>
+                <li>Hidden Menu 개발</li>
+            </ul>
+            <h4>기술 스택</h4>
+            <div class="modal-tags">
+                <span class="tag">Android Framework</span><span class="tag">Java</span><span class="tag">System App</span><span class="tag">AOSP</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+            <div class="contact-item">
+                <h3>Email</h3>
+                <a href="mailto:email@example.com">email@example.com</a>
+            </div>
+            <div class="contact-item">
+                <h3>GitHub</h3>
+                <a href="https://github.com/username" target="_blank" rel="noopener">github.com/username</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 홍길동. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
