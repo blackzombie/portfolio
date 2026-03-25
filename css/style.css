@@ -746,6 +746,93 @@ footer {
     font-size: 0.85rem;
 }
 
+/* ========== Experience Project Detail ========== */
+.exp-project {
+    background: #f9fafb;
+    border: 1px solid #eef1f6;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin: 10px 0;
+}
+
+.exp-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.exp-period {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+.exp-desc {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.exp-screenshots {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.exp-screenshots img {
+    height: 180px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    object-fit: cover;
+}
+
+.exp-project ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.exp-project li {
+    font-size: 0.82rem;
+    color: #444;
+    padding: 2px 0 2px 14px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.exp-project li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.exp-link {
+    margin-top: 8px;
+    font-size: 0.8rem;
+}
+
+.exp-link a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px solid #c7d2fe;
+}
+
+.exp-link a:hover {
+    border-bottom-color: #2563eb;
+}
+
 /* ========== PDF Button ========== */
 .btn-pdf {
     padding: 6px 16px;
@@ -798,8 +885,8 @@ footer {
         padding-top: 40px;
     }
 
-    /* 타임라인 항목이 페이지 걸쳐서 잘리지 않도록 */
-    .timeline-item {
+    /* 이미지가 있는 프로젝트만 페이지 걸쳐서 잘리지 않도록 */
+    .exp-screenshots {
         page-break-inside: avoid;
     }
 

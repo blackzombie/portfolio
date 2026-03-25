@@ -38,9 +38,9 @@
         <div class="about-summary">
             <div class="summary-grid">
                 <div class="summary-item">피처폰 개발부터 Android 네이티브, SDK 설계, 크로스플랫폼(Flutter)까지 모바일 전 세대를 경험한 개발자</div>
-                <div class="summary-item">OpenTelemetry 기반 APM(성능 모니터링) SDK 설계 및 다수 금융권 고객사 적용 경험</div>
-                <div class="summary-item">AI 음식 인식 카메라 SDK, 건강관리 앱 등 SDK와 앱 양쪽의 설계/개발/배포 경험 보유</div>
-                <div class="summary-item">항공권 예매 사이트 웹 프론트 개발, 제휴사 API 연동, Node.js 서버 운영 등 웹 풀스택 경험 보유</div>
+                <div class="summary-item">OpenTelemetry 기반 APM 및 AI 카메라 등 다양한 SDK 설계·개발 경험</div>
+                <div class="summary-item">다수의 앱 개발 및 운영을 통해 광고(AdMob) 및 인앱결제(In-App Billing) 기반 수익화 경험 보유</div>
+                <div class="summary-item">항공권 예매 사이트 웹 프론트 개발, 제휴사 API 연동, Node.js 서버 운영 등 웹 경험 보유</div>
                 <div class="summary-item">대기업 엔터프라이즈 솔루션 (메신저, 그룹웨어) 다수 개발 및 다국가 대응</div>
                 <div class="summary-item">LG전자 Android 디바이스 프레임워크(OS 레벨) 개발 경험</div>
             </div>
@@ -164,12 +164,41 @@
                     <span class="timeline-date">2025.04 - 현재</span>
                     <h3>어니컴(주)</h3>
                     <p class="timeline-role">TaaS플랫폼 사업부 &middot; 수석연구원</p>
-                    <ul>
-                        <li>IMQA Android SDK 개발 및 운영 (OpenTelemetry 기반)</li>
-                        <li>삼성생명 전자서명 레거시 환경 대응 개발 — 순수 Java OTLP 직접 구현</li>
-                        <li>Flutter SDK 개발 (Pigeon 네이티브 연동)</li>
-                        <li class="timeline-clients">농협, 금융결제원, 삼성생명, 서민금융진흥원, 강원랜드, OK데이터</li>
-                    </ul>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">IMQA Android SDK <span class="exp-period">2025.04 - 2026.03</span></h4>
+                        <p class="exp-desc">OpenTelemetry 기반 Android 앱 성능 모니터링 SDK. 기존 아키텍처 재설계 및 기능 확장 리뉴얼 수행. 농협 프로젝트 포함 다수 금융권 고객사 적용.</p>
+                        <ul>
+                            <li>Render 성능 추적 (화면 이동 성능 측정)</li>
+                            <li>사용자 클릭 이벤트 및 화면 추적</li>
+                            <li>네트워크 XHR 트레이싱 (OkHttp / Retrofit / HttpURLConnection / Ktor)</li>
+                            <li>WebView 이벤트 및 JS 브릿지 연동</li>
+                            <li>Crash, ANR 수집 및 로그 전송</li>
+                            <li>Jetpack Compose 환경 사용자 이벤트 지원 (확장 모듈)</li>
+                            <li>CPU / Memory / Battery / Network 상태 모니터링 및 수집</li>
+                            <li>다양한 고객사 환경 호환성 확보 및 SDK 구조 개선</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Compose</span><span class="tag">OpenTelemetry</span><span class="tag">OkHttp</span><span class="tag">Ktor</span><span class="tag">Maven Central</span></div>
+                        <p class="exp-link">Site : <a href="https://www.imqa.io/" target="_blank" rel="noopener">https://www.imqa.io/</a></p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">삼성생명 전자서명용 IMQA SDK <span class="exp-period">2025.05 - 2026.03</span></h4>
+                        <p class="exp-desc">OpenTelemetry SDK 없이 OTLP 스펙 기반으로 순수 Java 직접 구현. 레거시 환경(Gradle 4.6, SDK 27, Support Library) 대응.</p>
+                        <ul>
+                            <li>OTLP 데이터 포맷 직접 구현, 디스크 기반 배치 프로세서 자체 개발</li>
+                            <li>Render 추적, 클릭 이벤트, XHR, WebView, Crash 수집</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Java</span><span class="tag">OTLP</span><span class="tag">OkHttp</span><span class="tag">Apache HttpClient</span></div>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">IMQA Flutter SDK <span class="exp-period">2025.10 - 2026.11</span></h4>
+                        <p class="exp-desc">OpenTelemetry 기반 Flutter 분석/모니터링 SDK (내부 R&D). Pigeon 활용 네이티브 플랫폼(Android) 연동.</p>
+                        <div class="exp-tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Pigeon</span><span class="tag">OpenTelemetry</span></div>
+                    </div>
+
+                    <li class="timeline-clients">고객사: 농협, 금융결제원, 삼성생명, 서민금융진흥원, 강원랜드, OK데이터</li>
                 </div>
             </div>
 
@@ -179,13 +208,68 @@
                     <span class="timeline-date">2022.08 - 2025.03</span>
                     <h3>두잉랩</h3>
                     <p class="timeline-role">모바일팀 &middot; 팀장</p>
-                    <ul>
-                        <li>FoodLens SDK V3 리뉴얼 — 카메라, AI 음식 인식, 멀티 모듈 설계, Maven 배포</li>
-                        <li>상식플러스 앱 전체 개발 (Compose, CGM 연동)</li>
-                        <li>다이어트카메라AI 앱 유지보수 및 CES 데모 버전 개발</li>
-                        <li>FoodLens SDK 유지보수 — 카메라, AI 음식 인식, 멀티 모듈 설계, Maven 배포</li>
-                        <li class="timeline-clients">삼성생명, 녹십자, 서울특별시, 쥬비스, 메트라이프, 필리코치</li>
-                    </ul>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">상식플러스 <span class="exp-period">2024.06 - 2025.02</span></h4>
+                        <p class="exp-desc">FoodLens SDK V3를 이용한 식단/혈당/체중 관리 앱. 리뉴얼 버전 전체 개발.</p>
+                        <div class="exp-screenshots">
+                            <img src="img/sangsik_1.jpeg" alt="상식플러스 스크린샷1">
+                            <img src="img/sangsik_2.jpeg" alt="상식플러스 스크린샷2">
+                        </div>
+                        <ul>
+                            <li>Jetpack Compose + XML 하이브리드 UI 구현</li>
+                            <li>Hilt 기반 Clean Architecture (멀티 모듈: app, core, ui-common)</li>
+                            <li>Firebase Auth + 소셜 로그인 3종 (Google, Naver, Kakao)</li>
+                            <li>FCM 푸시 알림, 케어센스 CGM(연속혈당측정) 연동</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Kotlin</span><span class="tag">Compose</span><span class="tag">Hilt</span><span class="tag">Firebase</span><span class="tag">IMQA SDK</span></div>
+                        <p class="exp-link">Google Play : <a href="https://play.google.com/store/apps/details?id=com.doinglab.sangsik&hl=ko" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.doinglab.sangsik</a></p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">FoodLens SDK V3 <span class="exp-period">2024.02 - 2025.02</span></h4>
+                        <p class="exp-desc">사진 촬영만으로 음식을 인식하고 영양 분석하는 AI 카메라 SDK. V3 리뉴얼 개발.</p>
+                        <div class="exp-screenshots">
+                            <img src="img/foodlens_1.jpeg" alt="FoodLens 스크린샷1">
+                            <img src="img/foodlens_2.jpeg" alt="FoodLens 스크린샷2">
+                        </div>
+                        <ul>
+                            <li>Camera2 API 기반 카메라 직접 구현 (촬영, 플래시, 방향 감지)</li>
+                            <li>EXIF 회전 보정, Bitmap 리사이즈/압축 이미지 처리 파이프라인</li>
+                            <li>MediaStore API(Scoped Storage) 대응, Room DB 연동</li>
+                            <li>멀티 모듈 SDK 구조 설계 (core, ui), Maven Central 배포</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Kotlin</span><span class="tag">Camera2</span><span class="tag">MVVM</span><span class="tag">Room</span><span class="tag">Glide</span><span class="tag">Maven</span></div>
+                        <p class="exp-link">GitHub : <a href="https://github.com/doinglab/FoodLensSDK-V3" target="_blank" rel="noopener">https://github.com/doinglab/FoodLensSDK-V3</a></p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">다이어트 카메라 AI <span class="exp-period">2022.08 - 2025.02</span></h4>
+                        <p class="exp-desc">FoodLens SDK를 이용하여 사진 촬영으로 칼로리를 계산하고 다이어트에 도움을 주는 앱. CES 데모 버전 및 Phase2 신규 버전 개발.</p>
+                        <div class="exp-screenshots">
+                            <img src="img/dietcamera_1.jpeg" alt="다이어트카메라 스크린샷1">
+                            <img src="img/dietcamera_2.jpeg" alt="다이어트카메라 스크린샷2">
+                        </div>
+                        <ul>
+                            <li>CES 전시용 데모 버전 개발</li>
+                            <li>Jetpack Compose 기반 Phase2 신규 버전 개발</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Kotlin</span><span class="tag">Compose</span><span class="tag">Camera2</span><span class="tag">FoodLens SDK</span></div>
+                        <p class="exp-link">Google Play : <a href="https://play.google.com/store/apps/details?id=com.doinglab.dietdiaryai" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.doinglab.dietdiaryai</a></p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">CaloAI SDK <span class="exp-period">2023.02 - 2023.03</span></h4>
+                        <p class="exp-desc">음식 인식/영양분석 솔루션 (V2). SDK 개발 및 Maven 배포.</p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">FoodLens SDK (V1 유지보수) <span class="exp-period">2022.08 - 2025.02</span></h4>
+                        <p class="exp-desc">기존 고객사 대상 SDK 유지보수, Maven 배포, VOC 대응.</p>
+                        <p class="exp-link">GitHub : <a href="https://github.com/doinglab/FoodLensSDK" target="_blank" rel="noopener">https://github.com/doinglab/FoodLensSDK</a></p>
+                    </div>
+
+                    <li class="timeline-clients">고객사: 삼성생명, 녹십자, 서울특별시, 쥬비스, 메트라이프, 필리코치</li>
                 </div>
             </div>
 
@@ -195,9 +279,24 @@
                     <span class="timeline-date">2020.12 - 2022.08</span>
                     <h3>토이푸딩</h3>
                     <p class="timeline-role">개발팀 &middot; 팀장</p>
-                    <ul>
-                        <li>MIMTOK — 숏클립 세로영상 SNS 플랫폼 전체 Android 개발</li>
-                    </ul>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">MIMTOK</h4>
+                        <p class="exp-desc">숏클립 세로영상 SNS 플랫폼. 안드로이드 네이티브 앱 전체 개발 및 유지보수.</p>
+                        <div class="exp-screenshots">
+                            <img src="img/mimtok_1.png" alt="MIMTOK 스크린샷1">
+                            <img src="img/mimtok_2.png" alt="MIMTOK 스크린샷2">
+                        </div>
+                        <ul>
+                            <li>Tencent LiteAVSDK 기반 숏클립 녹화/편집 및 라이브 스트리밍</li>
+                            <li>FaceUnity SDK 연동 (AR 뷰티 필터, 메이크업 효과)</li>
+                            <li>AdMob 광고, AppsFlyer 딥링크/Deferred Deep Link 연동</li>
+                            <li>소셜 로그인 5종 (Kakao, Facebook, Line, Google, Twitter)</li>
+                            <li>Firebase (Auth, Analytics, FCM 푸시 알림)</li>
+                            <li>Amazon S3 파일 업로드</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Java</span><span class="tag">MVP</span><span class="tag">AdMob</span><span class="tag">AppsFlyer</span><span class="tag">FCM</span><span class="tag">RxJava</span><span class="tag">멀티모듈</span></div>
+                    </div>
                 </div>
             </div>
 
@@ -207,9 +306,25 @@
                     <span class="timeline-date">2019.11 - 2020.09</span>
                     <h3>(주)트이다</h3>
                     <p class="timeline-role">개발팀 &middot; 차장</p>
-                    <ul>
-                        <li>TEUIDA — 외국인 한국어 교육 앱 전체 Android 개발</li>
-                    </ul>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">TEUIDA</h4>
+                        <p class="exp-desc">외국인에게 한국어를 교육해주기 위한 앱. 전체 Android 개발 및 유지보수.</p>
+                        <div class="exp-screenshots">
+                            <img src="img/teuida_1.jpeg" alt="TEUIDA 스크린샷1">
+                            <img src="img/teuida_2.jpeg" alt="TEUIDA 스크린샷2">
+                        </div>
+                        <ul>
+                            <li>Android Speech Recognition API(STT) 기반 한국어 발음 연습 및 점수 측정</li>
+                            <li>ExoPlayer 기반 HLS 영상 스트리밍 및 오프라인 캐싱</li>
+                            <li>Google AdMob 광고 (리워드 영상 광고)</li>
+                            <li>Google Play Billing 인앱 결제 (프리미엄 구독)</li>
+                            <li>소셜 로그인 2종 (Google, Facebook), FCM 푸시 알림</li>
+                            <li>HelloCharts 기반 학습 진도 시각화</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Java</span><span class="tag">STT</span><span class="tag">ExoPlayer</span><span class="tag">AdMob</span><span class="tag">In-App Purchase</span><span class="tag">FCM</span></div>
+                        <p class="exp-link">Google Play : <a href="https://play.google.com/store/apps/details?id=net.teuida.teuida&hl=ko" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=net.teuida.teuida</a></p>
+                    </div>
                 </div>
             </div>
 
@@ -219,10 +334,30 @@
                     <span class="timeline-date">2017.09 - 2019.11</span>
                     <h3>폴라리움</h3>
                     <p class="timeline-role">항공플랫폼사업본부 &middot; 차장</p>
-                    <ul>
-                        <li>TOURVIS 항공권 예매 — 웹 프론트 개발 및 제휴사 연동 (스카이스캐너, 카약, G9)</li>
-                        <li>TripView 출장관리 — Android 앱 개발 및 Node.js/MongoDB 서버 운영</li>
-                    </ul>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">TOURVIS 항공권 예매</h4>
+                        <p class="exp-desc">항공권 예매 사이트 모바일 웹 프론트 개발, 제휴사 연동, 하이브리드 앱 개발.</p>
+                        <ul>
+                            <li>모바일 웹 프론트 개발 및 유지보수</li>
+                            <li>스카이스캐너, 카약, G9 제휴사 연동 개발</li>
+                            <li>TOURVIS 하이브리드 Android 앱 개발</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">Android</span></div>
+                        <p class="exp-link">Site : <a href="https://tourvis.com/" target="_blank" rel="noopener">https://tourvis.com/</a></p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">TripView 출장관리</h4>
+                        <p class="exp-desc">법인 고객 대상 출장 일정관리 서비스. Android 앱 개발 및 서버 운영.</p>
+                        <div class="exp-tags"><span class="tag">Android</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">B-Box 유지보수 <span class="exp-period">2017.09 - 2017.12</span></h4>
+                        <p class="exp-desc">SK B-Box 안드로이드 모델 유지보수 업무.</p>
+                        <div class="exp-tags"><span class="tag">Android</span></div>
+                    </div>
                 </div>
             </div>
 
@@ -232,10 +367,38 @@
                     <span class="timeline-date">2014.08 - 2017.09</span>
                     <h3>케이엠에스랩</h3>
                     <p class="timeline-role">융합기술팀</p>
-                    <ul>
-                        <li>아모레퍼시픽, 포스코, 연합뉴스 등 대기업 사내 메신저/그룹웨어 Android 개발</li>
-                        <li>오프라인 모드, 메일/결제/주소록 로컬 DB 저장</li>
-                    </ul>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">아모레퍼시픽 사내 메신저 / 그룹웨어</h4>
+                        <p class="exp-desc">사내 메신저(ABC2) 고도화, 그룹웨어(mAP-ON) 오프라인 모드, NEW EP 구축. 국내/해외/중국 다국가 대응.</p>
+                        <ul>
+                            <li>Long Polling 및 Socket 통신 기반 메신저 기능 구현</li>
+                            <li>대화 유실 개선, 이전 대화 보기, 오프라인 대화 기능 개발</li>
+                            <li>메일, 결재, 주소록 로컬 DB 저장 및 암호화</li>
+                        </ul>
+                        <div class="exp-tags"><span class="tag">Android (Java)</span><span class="tag">Long Polling</span><span class="tag">Socket</span><span class="tag">SQLite 암호화</span><span class="tag">다국가</span></div>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">포스코 그룹웨어</h4>
+                        <p class="exp-desc">포스코 패밀리, 외주사 모바일 그룹웨어 개발 (국내, 해외, 중국용).</p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">연합뉴스 메신저 / 그룹웨어</h4>
+                        <p class="exp-desc">연합뉴스 직원용 모바일 메신저 및 그룹웨어 개발.</p>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">K-Portal Ring</h4>
+                        <p class="exp-desc">전화가 오면 서버에 등록된 번호에 한해 발신자 정보를 제공하는 사내 서비스. 전화번호 자동 등록, 메시지 기능 제공. 아모레퍼시픽 사내 사용.</p>
+                        <div class="exp-tags"><span class="tag">Android (Java)</span></div>
+                    </div>
+
+                    <div class="exp-project">
+                        <h4 class="exp-title">분당재생병원 메신저 / 아모레퍼시픽 A+</h4>
+                        <p class="exp-desc">병원 직원 메신저, 백화점 판매 관리앱 기능 개선.</p>
+                    </div>
                 </div>
             </div>
 
@@ -246,7 +409,7 @@
                     <h3>xprime</h3>
                     <p class="timeline-role">개발팀</p>
                     <ul>
-                        <li>LG전자 Android 디바이스 프레임워크 개발 (Setting, Launcher, Call)</li>
+                        <li>LG전자 Android 디바이스 프레임워크 개발 (Setting, Launcher, Hidden Menu)</li>
                         <li>삼성생명, 삼성건설, LG전자, 농협, SK 등 대기업 Android 앱 개발</li>
                         <li>TouchTak 스마트 테이블 솔루션 — MDM, 런처, 브라우저 전체 개발</li>
                     </ul>
@@ -275,12 +438,6 @@
 <section id="projects">
     <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="projects-filter">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="sdk">SDK</button>
-            <button class="filter-btn" data-filter="app">App</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-        </div>
         <div class="projects-grid">
 
             <div class="project-card" data-category="sdk" onclick="openModal('modal-imqa')">
