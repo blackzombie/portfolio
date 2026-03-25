@@ -97,3 +97,8 @@ document.addEventListener('keydown', (e) => {
         });
     }
 });
+
+// ========== Print Resume (without Projects) ==========
+function printResume() {
+    window.print();
+}

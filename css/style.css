@@ -746,6 +746,68 @@ footer {
     font-size: 0.85rem;
 }
 
+/* ========== PDF Button ========== */
+.btn-pdf {
+    padding: 6px 16px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    background: transparent;
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+}
+
+.btn-pdf:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* ========== Print (PDF) ========== */
+@media print {
+    #navbar, #projects, .modal, footer, .btn-pdf {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* About = 1페이지 */
+    .about-hero {
+        padding-top: 40px !important;
+        padding-bottom: 60px !important;
+    }
+
+    /* Skills = 2페이지부터 */
+    #skills {
+        page-break-before: always;
+        padding-top: 40px;
+    }
+
+    /* Experience = 3페이지부터 */
+    #experience {
+        page-break-before: always;
+        padding-top: 40px;
+    }
+
+    /* 타임라인 항목이 페이지 걸쳐서 잘리지 않도록 */
+    .timeline-item {
+        page-break-inside: avoid;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}
+
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
 
